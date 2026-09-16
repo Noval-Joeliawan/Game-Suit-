@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suit Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="logo">🎮</div>
+        <div>
+          <h1>Suit Game</h1>
+          <p>Batu • Gunting • Kertas</p>
+        </div>
+      </header>
+
+      <main>
+        <div class="score-board">
+          <div>
+            <span>Kamu</span>
+            <strong id="scorePlayer">0</strong>
+          </div>
+
+          <div class="vs">VS</div>
+
+          <div>
+            <span>Komputer</span>
+            <strong id="scoreComputer">0</strong>
+          </div>
+        </div>
+
+        <section class="game-area">
+          <h2 id="message">Pilih senjatamu!</h2>
+
+          <div class="choices">
+            <button class="choice" data-choice="batu">
+              <span>🪨</span>
+              <small>Batu</small>
+            </button>
+
+            <button class="choice" data-choice="gunting">
+              <span>✂️</span>
+              <small>Gunting</small>
+            </button>
+
+            <button class="choice" data-choice="kertas">
+              <span>📄</span>
+              <small>Kertas</small>
+            </button>
+          </div>
+
+          <div class="result" id="result">
+            <div class="player-choice">
+              <span id="playerIcon">❔</span>
+              <p>Kamu</p>
+            </div>
+
+            <div class="result-text">
+              <span id="resultTitle">VS</span>
+              <small id="resultDescription">Pilih salah satu</small>
+            </div>
+
+            <div class="computer-choice">
+              <span id="computerIcon">❔</span>
+              <p>Komputer</p>
+            </div>
+          </div>
+
+          <button class="reset-btn" id="resetBtn">🔄 Main Lagi</button>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2026 Suit Game</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
