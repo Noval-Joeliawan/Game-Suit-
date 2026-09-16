@@ -48,12 +48,12 @@ choices.forEach(button => {
 
         if (hasil === 'MENANG!') {
             scorePlayer++;
-            message.textContent = '🎉 Kamu Menang!';
+            message.textContent = 'Kamu Menang!';
         } else if (hasil === 'KALAH!') {
             scoreComputer++;
-            message.textContent = '😢 Kamu Kalah!';
+            message.textContent = 'Kamu Kalah!';
         } else {
-            message.textContent = '🤝 Hasilnya Seri!';
+            message.textContent = 'Hasilnya Seri!';
         }
 
         playerScore.textContent = scorePlayer;
